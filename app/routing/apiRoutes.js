@@ -11,6 +11,5 @@ module.exports = function(app) {
   //Post a new friend object to the array in the friendsData.js file 
   app.post("/api/friends", function(req, res) {
     friendsData.push(req.body);
-    //res.json(true);
   });
 };
